@@ -1,2 +1,1 @@
-#Voice Assistant
-  for linux
+<h3 style = 'italic'>Voice Assistant</h3>
