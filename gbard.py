@@ -6,9 +6,11 @@ import warnings
 from bardapi import chat
 from wakeWord_detect import speak
 
+# you can get the token from cookie section under applications in your browser
+
 token = 'Your google bard SSPID1'
 
-bard = Bard(token='fAgTJe5ti1S2lUogf_T7moSpUo7cr5Z2DREhSrF1XJfrzro7PSDKqCvMGIcGEWtDrM4yrA.')
+bard = Bard(token=token)
 
 r = sr.Recognizer()
 
