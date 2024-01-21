@@ -1,4 +1,4 @@
-<h3>Voice Assistant For Linux</h3>
+<h1>Voice Assistant For Linux</h1>
 
 
 ## Hacking Linux with just my voice? Challenge accepted!
