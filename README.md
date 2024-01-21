@@ -61,5 +61,7 @@ For any questions or feedback, feel free to contact us at rohithnani8179@gmail.c
 ## Check the below !!!
 
 Microphone setup: Ensure your microphone is properly configured for speech recognition.
+
 Customization: Explore the code to tailor the assistant's behavior to your preferences.
+
 Contributions: Help us expand the assistant's capabilities by suggesting new features or submitting code improvements.
