@@ -1,4 +1,4 @@
-<h1>Voice Assistant For Linux</h1>
+<h1>Voice Assistant For Linux 🐧</h1>
 
 
 ## Hacking Linux with just my voice? Challenge accepted!
@@ -7,7 +7,7 @@ Built an assistant using python, the voice-activated assistant that helps develo
 
 Streamline your tasks and control your Linux system with your voice!
 
-It utilizes speech recognition and text-to-speech capabilities to enable hands-free interaction with your computer.
+🤖It utilizes speech recognition and text-to-speech capabilities to enable hands-free interaction with your computer.
 
 ## Features
 
