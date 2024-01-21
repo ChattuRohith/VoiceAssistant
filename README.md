@@ -13,10 +13,15 @@ Streamline your tasks and control your Linux system with your voice!
 
 Manage tasks:
 Open applications (e.g., "Open Firefox")
+
 Search the web (e.g., "Search microsoft")
+
 Play music (e.g., "Play songs")
+
 Control system settings (e.g., "Volume up")
+
 Use Google Intelligence - Bard 
+
 Get information from wikipedia
 
 ## Installation
