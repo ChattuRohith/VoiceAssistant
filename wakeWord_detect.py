@@ -21,13 +21,13 @@ def wake_detect():
         r.adjust_for_ambient_noise(source)
         while True:
             try:
-                print('To Wake the assistant Say "john" or "bot"')
+                print('To Wake the assistant Say "Linux"')
                 audio = r.listen(source, 10, 5)
                 with open("wake_detect.wav", "wb") as f:
                     f.write(audio.get_wav_data())
                 result = tiny_model.transcribe('wake_detect.wav')
                 text_input = result['text']
-                if 'bot' in text_input.lower().strip():
+                if 'Linux' in text_input.lower().strip():
                     speak('hey there , how can I be of service')
                     playsound.playsound('/home/user/Downloads/dell.mp3')
                     break
