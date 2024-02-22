@@ -5,7 +5,7 @@
 
 Built an assistant using python, the voice-activated assistant that helps developers and breaks the keyboard barrier.
 
-Streamline your tasks and control your Linux system with your voice!
+Streamline your tasks and control your Linux system with just your voice!
 
 🤖It utilizes speech recognition and text-to-speech capabilities to enable hands-free interaction with your computer.
 
