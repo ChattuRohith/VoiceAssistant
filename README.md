@@ -61,7 +61,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Contact
 
-For any questions or feedback, feel free to contact us at rohithnani8179@gmail.com
+For any questions or feedback, feel free to contact at rohithnani8179@gmail.com
 
 ## Check the below !!!
 
