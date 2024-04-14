@@ -3,7 +3,7 @@ from main import takeCommand
 from wakeWord_detect import speak
 
 # todo add the weather in main
-api_key = 'a4b621a7669e473e3b2f0613217fa009'
+api_key = 'Add your API Key'
 def get_weather():
     print('Linux Assistant: Speak the city name only!')
     speak('Speak the city name')
