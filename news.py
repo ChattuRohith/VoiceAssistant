@@ -26,7 +26,7 @@ def takeCommand():
     return query
 
 # you have to get your api key from newapi.com and then paste it below
-newsapi = NewsApiClient(api_key='04b548362d2d46ec920c68c3f15277ff')
+newsapi = NewsApiClient(api_key='API Key')
 
 # now we will take name of country from user as input
 input_country = 'India'
