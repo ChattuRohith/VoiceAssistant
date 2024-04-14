@@ -30,7 +30,7 @@ print('Ask any Query/Doubt/Math Calculations etc..')
 question = takeCommand()
 
 # App id obtained by the above steps
-app_id = 'Y8K4RR-3HQ74A8TVT'
+app_id = 'Y8K4RR-3#######VT'
 
 # Instance of wolf ram alpha
 # client class
