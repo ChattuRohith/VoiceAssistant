@@ -2,15 +2,17 @@ import pyttsx3
 import speech_recognition as sr
 import whisper
 import playsound
-
+import datetime
 r = sr.Recognizer()
+
+
 
 engine = pyttsx3.init()
 rate = engine.getProperty('rate')
 voices = engine.getProperty("voices")
-engine.setProperty('rate', rate-60)
+engine.setProperty('rate', rate-80)
 engine.setProperty('voice', 'english_rp+f3')
-tiny_model = whisper.load_model('tiny.en')
+tiny_model = whisper.load_model('tiny')
 base_model = whisper.load_model('base')
 
 
@@ -18,13 +20,27 @@ def speak(audio):
     engine.say(audio)
     engine.runAndWait()
 
+def wishMe():
+    hour = int(datetime.datetime.now().hour)
+    if hour >= 0 and hour < 12:
+        print("Linux Assistant: Welcome!!!!")
+        speak("Good Morning !")
+
+    elif hour >= 12 and hour < 18:
+        print("Linux Assistant: Welcome!!!!")
+        speak("Good Afternoon !")
+
+    else:
+        print("Linux Assistant: Welcome!!!!")
+        speak("Good Evening !")
+    speak("I am your Assistant")
 
 def Command_input():
     with sr.Microphone() as source:
         r.adjust_for_ambient_noise(source)
         try:
             print("Listening....")
-            audio = r.listen(source, 10, 8)
+            audio = r.listen(source,10, 10)
             with open('query.wav','wb') as f:
                 f.write(audio.get_wav_data())
             print('Recognizing')
@@ -41,22 +57,24 @@ def Command_input():
 
 
 def wake_detect():
+    count = 0
     with sr.Microphone() as source:
         r.adjust_for_ambient_noise(source)
-        while True:
+        while True and (count < 2):
             try:
-                print('To Wake the assistant Say "john" or "bot"')
-                audio = r.listen(source, 10, 5)
+                print('Waiting for the wake word ...')
+                audio = r.listen(source, 10, 3)
                 with open("wake_detect.wav", "wb") as f:
                     f.write(audio.get_wav_data())
                 result = tiny_model.transcribe('wake_detect.wav')
                 text_input = result['text']
-                if 'bot' in text_input.lower().strip() or 'john' in text_input.lower().strip():
+                if 'linux' in text_input.lower():
                     playsound.playsound('/home/user/Downloads/dell.mp3')
-                    speak('hello sir , how can I be of service')
                     break
                 else:
                     print('No Wake Word Found')
+                    count += 1
             except Exception as e:
                 print("Error Transcribing audio!!", e)
                 continue
+    return count

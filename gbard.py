@@ -5,10 +5,10 @@ import whisper
 import warnings
 from bardapi import chat
 from wakeWord_detect import speak
+# todo Add a new SSPID
 
-token = 'Your google bard SSPID1'
 
-bard = Bard(token=token)
+#bard = Bard(token=)
 
 r = sr.Recognizer()
 
