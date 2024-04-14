@@ -51,16 +51,13 @@ Example commands:
 "Play music"
 "What's the current time?"
 
-## Contributing
-
-We welcome contributions to this project! Please refer to the CONTRIBUTING.md file for guidelines.
-
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
 
+We welcome contributions to this project!
 For any questions or feedback, feel free to contact at rohithnani8179@gmail.com
 
 ## Check the below !!!
